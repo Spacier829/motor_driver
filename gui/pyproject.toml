@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "motor-driver-gui"
+version = "0.1.0"
+description = ""
+authors = ["Spacier829 <mrsimpleeegor@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pyserial = "^3.5"
+loguru = "^0.7.2"
+pyqt6 = "^6.7.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

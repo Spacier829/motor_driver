@@ -1,0 +1,13 @@
+../Core/Src/main.c:67:6:SendMotorStatus	2
+../Core/Src/main.c:81:6:SetMotorSpeed	3
+../Core/Src/main.c:97:6:SetTimeRotation	1
+../Core/Src/main.c:102:6:StartMotorInfinite	1
+../Core/Src/main.c:109:6:StartMotorTimeRotation	1
+../Core/Src/main.c:117:6:StopAndResetMotor	3
+../Core/Src/main.c:134:6:ProcessVCPCommand	11
+../Core/Src/main.c:188:5:main	3
+../Core/Src/main.c:245:6:SystemClock_Config	4
+../Core/Src/main.c:292:13:MX_TIM2_Init	4
+../Core/Src/main.c:341:13:MX_GPIO_Init	1
+../Core/Src/main.c:378:6:HAL_TIM_PeriodElapsedCallback	6
+../Core/Src/main.c:400:6:Error_Handler	1

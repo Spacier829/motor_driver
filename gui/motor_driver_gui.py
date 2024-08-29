@@ -28,6 +28,8 @@ class Motor_Driver_GUI(QtWidgets.QWidget):
         main_layout.addLayout(self.setup_connection_panel())
         main_layout.addLayout(self.setup_status_bar())
         self.setLayout(main_layout)
+        self.adjustSize()
+        self.setFixedSize(self.size())
 
     def setup_connection_panel(self):
         connection_panel_layout = QtWidgets.QHBoxLayout()

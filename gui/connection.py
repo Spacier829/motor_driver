@@ -28,7 +28,6 @@ class Connection:
             if self.monitoring_thread.is_alive():
                 self.monitoring_thread.join()
             self.device.close()
-            print("Двигатель отключен")
 
     def reconnect(self):
         self.disconnect()
@@ -39,14 +38,3 @@ class Connection:
 
     def receive(self):
         return self.device.read_all().decode()
-
-
-if __name__ == "__main__":
-    motor = Connection('COM6')
-    motor.connect()
-    if motor.device.is_open:
-        while (True):
-            command = input("Command:")
-            motor.transmit(command.encode())
-            # receive_data = motor.get_motor_status().decode()
-            # print(receive_data)

@@ -15,7 +15,12 @@ class Motor_Driver_GUI(QtWidgets.QWidget):
         self.motor_panel_1 = Motor_Control_Panel()
         self.motor_panel_2 = Motor_Control_Panel()
 
+        separator = QtWidgets.QFrame()
+        separator.setFrameShape(QtWidgets.QFrame.Shape.HLine)
+        separator.setFrameShadow(QtWidgets.QFrame.Shadow.Sunken)
+
         main_layout.addWidget(self.motor_panel_1)
+        main_layout.addWidget(separator)
         main_layout.addWidget(self.motor_panel_2)
 
         self.setLayout(main_layout)
